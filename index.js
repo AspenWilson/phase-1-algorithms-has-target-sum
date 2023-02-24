@@ -1,14 +1,27 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  //loop through the array
+  for (let i=0; i<array.length-1; i++){
+    for (let j=(i+1); j< array.length; j++){
+      if (array[i] + array[j] === target){
+        return true
+      }
+    }
+  }
+  return false
 }
 
 /* 
   Write the Big O time complexity of your function here
 */
+//0(n)
 
 /* 
   Add your pseudocode here
 */
+//I need to write a function that takes an array of numbers (array) and a targeted number (target)
+//I then need to check to see if any combination of two of the numbers in the array add up to the targeted number
+//If any two numbers add up to the target, return true. If not, return false. 
 
 /*
   Add written explanation of your solution here
